@@ -1,6 +1,6 @@
 alias ll="ls -FGlAhp"
 alias c="clear"
 alias ~="cd ~"
-cd() {builtin cd "$@"; ll;}
-alias poff="shutdown -P now"
-alias uptodate="apt-get update && apt-get dist-upgrade"
+cd() { builtin cd "$@"; ls-FGlAhp; }
+alias poff="sudo shutdown -P now"
+alias uptodate="sudo apt-get update && sudo apt-get dist-upgrade"
